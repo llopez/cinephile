@@ -1,5 +1,5 @@
-require "HoytsClient/version"
-require "HoytsClient/client"
+require "hoyts_client/version"
+require "hoyts_client/client"
 require "json"
 
 module HoytsClient
