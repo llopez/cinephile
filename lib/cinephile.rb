@@ -1,7 +1,8 @@
 require "cinephile/version"
 require "cinephile/client"
+require "cinephile/provider/hoyts"
 require "json"
 
-module HoytsClient
+module Cinephile
   # Your code goes here...
 end

@@ -2,6 +2,10 @@ module Cinephile
   class Client
     BASE_URL = "http://www.hoyts.com.ar"
 
+    def initialize({provider: nil})
+      @provider = 
+    end
+
     def self.get(path, params)
       uri = URI(BASE_URL + path)
       uri.query = URI.encode_www_form(params)
