@@ -1,5 +1,5 @@
-require "hoyts_client/version"
-require "hoyts_client/client"
+require "cinephile/version"
+require "cinephile/client"
 require "json"
 
 module HoytsClient

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'hoyts_client/version'
+require 'cinephile/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "HoytsClient"
-  spec.version       = HoytsClient::VERSION
+  spec.name          = "Cinephile"
+  spec.version       = Cinephile::VERSION
   spec.authors       = ["Luis Lopez"]
   spec.email         = ["luigibyte@gmail.com"]
 
-  spec.summary       = %q{Hoyts Client}
-  spec.description   = %q{Hoyts Client}
-  spec.homepage      = "http://hoyts-client.luigibyte.com.ar"
+  spec.summary       = %q{Cinephile}
+  spec.description   = %q{Cinephile}
+  spec.homepage      = "http://cinephile.luigibyte.com.ar"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

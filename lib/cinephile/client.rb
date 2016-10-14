@@ -1,4 +1,4 @@
-module HoytsClient
+module Cinephile
   class Client
     BASE_URL = "http://www.hoyts.com.ar"
 
@@ -13,33 +13,33 @@ module HoytsClient
     def self.theaters
       res = get("/jsonManager.aspx", { type: "cines" })
 
-      res.map do |x| 
-        { 
-          name: x['label'], 
-          id: x['value'] 
-        } 
+      res.map do |x|
+        {
+          name: x['label'],
+          id: x['value']
+        }
       end
     end
 
     def self.movies(theater_id)
       res = get("/jsonManager.aspx", { type: "cinema", selected: theater_id })
 
-      res.map do |x| 
-        { 
-          name: x['label'], 
-          id: x['value'] 
-        } 
+      res.map do |x|
+        {
+          name: x['label'],
+          id: x['value']
+        }
       end
     end
 
     def self.days(theater_id, movie_id)
       res = get("/jsonManager.aspx", { type: "movie", cinema: theater_id, selected: movie_id })
 
-      res.map do |x| 
-        { 
-          name: x['label'], 
-          id: x['value'] 
-        } 
+      res.map do |x|
+        {
+          name: x['label'],
+          id: x['value']
+        }
       end
     end
 
