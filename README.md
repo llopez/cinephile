@@ -1,8 +1,14 @@
 # Cinephile
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cinephile`. To experiment with that code, run `bin/console` for an interactive prompt.
+Cinephile is a simple Client to collect Cinema/Movie/Schedule information from several sources. 
+Also this gem is kinda build following the adapter patter, it makes contributions easier.
 
-TODO: Delete this and the text above, and describe your gem
+current sources are:
+
+- Hoyts 
+- Cinemark
+
+but you can add your own sources.
 
 ## Installation
 
