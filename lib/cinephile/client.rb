@@ -1,57 +1,26 @@
 module Cinephile
   class Client
-    BASE_URL = "http://www.hoyts.com.ar"
+    attr_reader :provider
 
-    def initialize({provider: nil})
-      @provider = 
+    def initialize(provider)
+      @provider = Provider.const_get(provider.capitalize)
     end
 
-    def self.get(path, params)
-      uri = URI(BASE_URL + path)
-      uri.query = URI.encode_www_form(params)
-
-      res = Net::HTTP.get_response(uri)
-      JSON.parse(res.body) if res.is_a?(Net::HTTPSuccess)
+    def cinemas
+      @provider.cinemas
     end
 
-    def self.theaters
-      res = get("/jsonManager.aspx", { type: "cines" })
-
-      res.map do |x|
-        {
-          name: x['label'],
-          id: x['value']
-        }
-      end
+    def movies(cid)
+      @provider.movies(cid)
     end
 
-    def self.movies(theater_id)
-      res = get("/jsonManager.aspx", { type: "cinema", selected: theater_id })
-
-      res.map do |x|
-        {
-          name: x['label'],
-          id: x['value']
-        }
-      end
+    def days(cid, mid)
+      @provider.movies(cid, mid)
     end
 
-    def self.days(theater_id, movie_id)
-      res = get("/jsonManager.aspx", { type: "movie", cinema: theater_id, selected: movie_id })
-
-      res.map do |x|
-        {
-          name: x['label'],
-          id: x['value']
-        }
-      end
+    def hours(cid, mid, d)
+      @provider.movies(cid, mid, d)
     end
-
-    def self.hours(theater_id, movie_id, day)
-      res = get("/jsonManager.aspx", { type: "Day", cinema: theater_id, movie: movie_id, selected: day })
-
-      res.map{ |x| x['label'] }
-    end
-
   end
 end
+

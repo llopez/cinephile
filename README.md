@@ -22,7 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+client = Cinephile::Client.new(:hoyts)
+client.cinemas
+client.movies(cinema)
+client.days(cinema, movie)
+client.hours(cinema, movie, day)
+
+client = Cinephile::Client.new(:cinemark)
+client.cinemas
+client.movies(cinema)
+client.days(cinema, movie)
+client.hours(cinema, movie, day)
+```
 
 ## Development
 
@@ -32,7 +44,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cinephile
+Bug reports and pull requests are welcome on GitHub at https://github.com/llopez/cinephile
 
 
 ## License

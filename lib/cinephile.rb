@@ -1,6 +1,7 @@
 require "cinephile/version"
+require "cinephile/providers/hoyts"
+require "cinephile/providers/cinemark"
 require "cinephile/client"
-require "cinephile/provider/hoyts"
 require "json"
 
 module Cinephile
