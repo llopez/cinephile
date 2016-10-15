@@ -1,5 +1,7 @@
 # Cinephile
 
+[![Build Status](https://travis-ci.org/llopez/cinephile.svg?branch=master)](https://travis-ci.org/llopez/cinephile)
+
 Cinephile is a simple Client to collect Cinema/Movie/Schedule information from several sources. 
 Also this gem is kinda build following the adapter patter, it makes contributions easier.
 
