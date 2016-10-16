@@ -1,0 +1,10 @@
+- isestreno: false
+  label: "22 hs"
+  value: "7"
+  points: nil
+
+- isestreno: false 
+  label: "24 hs"
+  value: "8" 
+  points: nil
+

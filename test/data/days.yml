@@ -1,0 +1,10 @@
+- isestreno: false
+  label: "Day 1"
+  value: "3"
+  points: nil
+
+- isestreno: false 
+  label: "Day 2"
+  value: "4" 
+  points: nil
+

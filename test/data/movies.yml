@@ -1,0 +1,10 @@
+- isestreno: false
+  label: "Movie 1"
+  value: "5"
+  points: nil
+
+- isestreno: false 
+  label: "Movie 2"
+  value: "6" 
+  points: nil
+

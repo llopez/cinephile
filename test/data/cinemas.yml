@@ -1,0 +1,10 @@
+- isestreno: false
+  label: "Cinema 1 Hoyts"
+  value: "1"
+  points: nil
+
+- isestreno: false 
+  label: "Cinema 2 Hoyts"
+  value: "2" 
+  points: nil
+

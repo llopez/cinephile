@@ -36,12 +36,7 @@ client.cinemas
 client.movies(cinema)
 client.days(cinema, movie)
 client.hours(cinema, movie, day)
-
-client = Cinephile::Client.new(:cinemark)
-client.cinemas
-client.movies(cinema)
-client.days(cinema, movie)
-client.hours(cinema, movie, day)
+client.schedule
 ```
 
 ## Development
